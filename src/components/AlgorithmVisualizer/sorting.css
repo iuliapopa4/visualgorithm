@@ -1,0 +1,127 @@
+body {
+    background-color: #fff6e5 ;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+  }
+  
+  .visualization {
+    flex: 1;
+    position: relative;
+    background-color: #fff  ;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    min-width: 700px;
+    min-height: 300px;
+  }
+  
+  .pseudocode {
+    flex: 1;
+    background-color: #fff  ;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+    margin-left:20px;
+    min-width: 500px;
+    min-height: 300px;
+  }
+  
+  .controls {
+    display: flex;
+    align-items: center;
+  }
+
+  .button-container {
+    display: flex;
+    margin-left: 80px;
+    gap: 5px;
+  }
+  
+  input[type='range'] {
+    margin-right: 10px;
+  }
+  
+  select {
+    padding: 8px;
+    border-radius: 5px;
+  }
+  
+  .bars {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .bar-container {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 30px;
+    margin-left: 20px;
+    margin-bottom: 5%;
+  }
+  
+  .bar {
+    width: 40px;
+    background-color: #ffa500;
+    transition: height 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+  }
+  
+  .bar-value-inside {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 17px;
+    color: white;
+    z-index: 1;
+  }
+  
+  .bar-index {
+    font-size: 12px;
+    color: #333;
+    margin-top: 5px;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .sort-type {
+    text-align: center;
+    padding-top: 40px;
+  }
+  
+  .sort-type p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .bar.highlight-red {
+    background-color: #cc0000 ;
+  }
+  
+  .bar.highlight-blue {
+    background-color: #323299 ;
+  }
+
+  .bar.sorted {
+    background-color: #ffa500;
+  }
+  .bar.highlight-green {
+    background-color: #72a400 ;
+  }
+  
